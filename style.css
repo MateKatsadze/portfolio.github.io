@@ -1,0 +1,52 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    height: 1000px;
+}
+
+header {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.418);
+}
+
+.mainTitle {
+    font-size: 2em;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.mainContent {
+    max-width: 90%;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.3em;
+    font-size: 1.3em; 
+    padding: 0 20px;
+}
+
+
+
+.title {
+    font-size: 1.6em;
+    font-weight: bolder;
+}
+
+.certificate {
+    font-size: 1.6em;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.certificateImg {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.certificateGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
