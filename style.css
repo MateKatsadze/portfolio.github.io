@@ -1,12 +1,19 @@
 body {
     font-family: sans-serif;
     margin: 0;
-    height: 1000px;
+    height: 1900px;
 }
+
+
 
 header {
     width: 100%;
     border-bottom: 1px solid rgba(0, 0, 0, 0.418);
+    margin-bottom: 80px;
+}
+
+.startingText {
+    margin-bottom: 80px;
 }
 
 .mainTitle {
@@ -66,7 +73,7 @@ header {
 
 
 .links a {
-    margin-right: 15px; /* Add right margin to the first link */
+    margin-right: 15px; 
 }
 
 a {
@@ -75,13 +82,6 @@ a {
     color: black;
     font-style: italic;
 }
-
-
-
-
-
-
-
 
 .preview {
     width: 100%; 
@@ -101,32 +101,90 @@ span {
 
 .projectGrid {
     display: grid;
-    /* grid-template-columns: repeat(auto-fit, minmax(0px, 1fr)); */
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
 }
 
+.skillSection {
+    margin-top: 80px;
+}
 
+.skill {
+    background-color: white;
+    filter: drop-shadow(0px 0px 1px #0000004d);
+    border-radius: 10px;
+    padding: 10px;
+    width: 90%; 
+    max-width: 300px;
+    margin: 0 auto; /* Center horizontally */
+    
+}
 
-.certificate {
+.skillsTitle {
     font-size: 1.6em;
     text-align: center;
     font-weight: bolder;
 }
 
-.certificateImg {
-    width: 300px;
-    min-width: 30%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+.skillTitle {
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-weight: bolder;
 }
 
-.certificateGrid {
+.skillsGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 20px;
+    justify-content: center; 
 }
+
+
+.awardSection {
+    margin-top: 80px;
+}
+
+.award {
+    background-color: white;
+    width: 90%; 
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px; 
+    box-sizing: border-box; 
+    filter: drop-shadow(0px 0px 1px #0000004d);
+    border-radius: 10px;
+
+}
+
+.certificate {
+    width: 100%; 
+    height: auto; 
+    display: block;
+    border-radius: 5px;
+}
+
+.awardTitle {
+    font-size: 1.2em;
+    /* margin-top: 10px; */
+    font-weight: bolder;
+}
+
+.awardsTitle {
+    font-size: 1.6em;
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+
+.lastUpdated {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.9em;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.364);
+}
+
 
 @media screen and (max-width: 768px) {
 
