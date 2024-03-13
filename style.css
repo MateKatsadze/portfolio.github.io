@@ -32,6 +32,69 @@ header {
     font-weight: bolder;
 }
 
+.projectTitle {
+    font-size: 1.6em;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.project {
+    background-color: white;
+    /* border: 2px solid black; */
+    width: 90%; 
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px; 
+    box-sizing: border-box; 
+    filter: drop-shadow(0px 0px 1px #0000004d);
+    border-radius: 10px;
+
+}
+
+
+.links a {
+    margin-right: 15px; /* Add right margin to the first link */
+}
+
+a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+.preview {
+    width: 100%; 
+    height: auto; 
+    display: block;
+    border-radius: 5px;
+}
+
+.aboutWebsite {
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+
+span {
+    font-size: 0.8em;
+}
+
+.projectGrid {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(0px, 1fr)); */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+
+
 .certificate {
     font-size: 1.6em;
     text-align: center;
@@ -39,7 +102,8 @@ header {
 }
 
 .certificateImg {
-    width: 100%;
+    width: 300px;
+    min-width: 30%;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -49,4 +113,21 @@ header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+.projectGrid {
+    grid-template-columns: 1fr;
+}
+
+.project {
+    max-width: 90%;
+}
+}
+  
+@media screen and (max-width: 480px) {
+.mainContent {
+    font-size: 1em;
+}
 }
